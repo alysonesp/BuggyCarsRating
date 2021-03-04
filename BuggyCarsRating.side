@@ -51,6 +51,13 @@
         ["xpath=//div[6]", "xpath:position"]
       ],
       "value": "UsernameExistsException: User already exists"
+    }, {
+      "id": "6e0306f0-4f5a-428b-850a-e4c1c46bd618",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "3d5b0bee-1413-4298-a33b-bf139eeefe7e",
@@ -235,6 +242,13 @@
         ["xpath=//div[6]", "xpath:position"]
       ],
       "value": "Registration is successful"
+    }, {
+      "id": "a3258634-52f5-4ff8-a365-da76342d670e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "0cb38711-27d0-4ce3-81cd-732b37ac9885",
@@ -449,6 +463,13 @@
         ["xpath=//span[contains(.,'Invalid username/password')]", "xpath:innerText"]
       ],
       "value": "Invalid username/password"
+    }, {
+      "id": "84b7afd9-39ba-47b4-88ab-78c0d60ba1ed",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "5d2f70d2-3d73-4701-9db5-f6ee7f76cca0",
@@ -499,6 +520,13 @@
         ["xpath=//button", "xpath:position"],
         ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "ca356d14-4359-4fcc-910c-a3b91727cb93",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }, {
@@ -763,6 +791,13 @@
         ["xpath=//div[6]", "xpath:position"]
       ],
       "value": "Registration is successful"
+    }, {
+      "id": "0ef22282-7eaa-45fb-bb27-b07d27dada24",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "bab3e83b-5e86-4020-ade6-58921a62c151",
@@ -771,7 +806,7 @@
       "id": "1de7d107-bace-4243-a828-b91417271dec",
       "comment": "",
       "command": "run",
-      "target": "RegUserNew_Success",
+      "target": "RegUserNew_Success_woc",
       "targets": [],
       "value": ""
     }, {
@@ -2772,6 +2807,13 @@
         ["xpath=//h2[contains(.,'Popular Make')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "d22fdbdc-e117-47ba-9c3d-a37de78f2a86",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "291063ec-ac5f-45a8-93a8-0b46e1f976b9",
@@ -3000,6 +3042,13 @@
         ["xpath=//h2", "xpath:position"],
         ["xpath=//h2[contains(.,'Popular Make')]", "xpath:innerText"]
       ],
+      "value": ""
+    }, {
+      "id": "ffe09865-ac30-423a-9411-913ec6a62493",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
       "value": ""
     }]
   }, {
@@ -3311,6 +3360,62 @@
         ["xpath=//h2[contains(.,'Popular Make')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "68889834-8b98-4bf3-8a09-5614d475f173",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7fc26004-2665-431f-9b5c-941b410ce195",
+    "name": "RegUserNew_Success_woc",
+    "commands": [{
+      "id": "bbff03f4-6b85-4213-9131-3cb0cc33c099",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Math.random(). toString(36).substring(2,12)",
+      "targets": [],
+      "value": "login"
+    }, {
+      "id": "71b9d320-60c6-4c24-b21b-43de3d977e91",
+      "comment": "",
+      "command": "store",
+      "target": "Jane",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "e89e150d-e6cf-417e-86c5-b72b3be8baf1",
+      "comment": "",
+      "command": "store",
+      "target": "Doe",
+      "targets": [],
+      "value": "lastname"
+    }, {
+      "id": "362860fa-c6c0-42fa-99d0-8be2e87120ee",
+      "comment": "",
+      "command": "store",
+      "target": "1122qqwwE!",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "2d9d5780-fa86-4d76-959b-22006f21ee25",
+      "comment": "",
+      "command": "run",
+      "target": "RegUserNew_",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68288b86-6f47-45ef-9611-912bd6fa518a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.result",
+      "targets": [
+        ["css=.result", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": "Registration is successful"
     }]
   }],
   "suites": [{
